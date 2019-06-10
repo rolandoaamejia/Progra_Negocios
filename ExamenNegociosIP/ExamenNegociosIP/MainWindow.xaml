@@ -1,0 +1,21 @@
+﻿<Window x:Class="ExamenNegociosIP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenNegociosIP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="BlueViolet" >
+            <TextBlock TextWrapping="WrapWithOverflow" Text="Nombre Empleado"/>
+            <TextBox x:Name="Empleado" Height="60" Width="400" Text="{Binding Empleado, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock TextWrapping="WrapWithOverflow" Text="numero de Identidad"/>
+            <TextBox x:Name="Identidad" Height="60" Width="400" Text="{Binding Identidad, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="HoTrabajadas" Height="60" Width="400" Text="{Binding hotrabajadas, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="PagHoNormal" Height="60" Width="400" Text="{Binding pahonormal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="HoExtra" Height="60" Width="400" Text="{Binding hoextra, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="PaHoExtra" Height="60" Width="400" Text="{Binding pahoextra, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+    </Grid>
+</Window>
